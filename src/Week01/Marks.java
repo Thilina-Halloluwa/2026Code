@@ -2,7 +2,7 @@ package Week01;
 
 public class Marks {
     public static void main(String[] args) {
-        double mark = 63;
+        double mark = 99.9;
         String grade;
 
         if (mark < 0.0 || mark > 100.0) {
