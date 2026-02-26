@@ -3,8 +3,15 @@ package Week01;
 public class Marks {
     public static void main(String[] args) {
         double mark = 99.9;
-        String grade;
+        String grade= CalcGrade(mark);
 
+
+        PrintMarks(grade);
+        System.out.println("Grade: " + grade);
+    }
+
+    static String CalcGrade(double mark) {
+        String grade = "";
         if (mark < 0.0 || mark > 100.0) {
             grade = "Invalid mark";
         } else if (mark >= 83.0) {
@@ -18,7 +25,10 @@ public class Marks {
         } else {
             grade = "Fail";
         }
+        return grade;
+    }
 
-        System.out.println("Grade: " + grade);
+    static void PrintMarks(String grade) {
+        System.out.println("Marks: " + grade);
     }
 }
