@@ -14,6 +14,11 @@ public class Person {
 
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -30,11 +35,19 @@ public class Person {
         return phoneNumber;
     }
 
-//    public static void main(String[] args) {
+
+
+    public static void main(String[] args) {
+        String[] Numbers= new String[]{"111","222","333"};
+        Person p=new Person("Tom",25,"Tom@uq.edu.au", Numbers );
+
 //        Person p=new Person("Tom",25,"Tom@uq.edu.au", new String[]{"111","222","333"} );
 //
-//        System.out.println(p.getName());
-//    }
+//        System.out.println(p2.getName());
+
+
+
+    }
 
 }
 

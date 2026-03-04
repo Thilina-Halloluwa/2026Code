@@ -5,6 +5,8 @@ public class Main {
         ContractEmployee contractEmployee= new ContractEmployee("Jack", "Brisbane", 500.00 );
         System.out.println(contractEmployee.printDetails());
 
+
+
         //Experiment with accessing (Parent) Employee variables and functions.
     }
 }

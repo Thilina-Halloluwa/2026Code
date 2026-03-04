@@ -18,8 +18,10 @@ public class ContractEmployee extends Employee {
         return hourlyRate * hoursWorked;
     }
 
+
+
     @Override
     public String printDetails() {
-        return "Role: Contract Employee, Hourly Rate: $" + hourlyRate + ", Hours Worked: " + hoursWorked;
+        return "Role: Contract Employee, Hourly Rate: $" + hourlyRate + ", Hours Worked: " + hoursWorked ;
     }
 }

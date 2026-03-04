@@ -12,7 +12,7 @@ class Main {
     public static void main(String[] args) {
         //creating an account object
         BankAccount account = new BankAccount();
-      //  account.balance = 1000.0;
+        // account.balance = 1000.0;
 
     }
 }
