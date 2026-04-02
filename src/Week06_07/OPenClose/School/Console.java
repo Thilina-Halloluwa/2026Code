@@ -10,17 +10,17 @@ public class Console {
 
         letterGradeCourses.add(new Course("CS", "A"));
 
-        GradingSystem letterGradingSystem = new LetterGradingSystem();
-        GPACalculator gpaCalculator = new GPACalculator(letterGradingSystem);
+        GradingSystem gradingSystem = new LetterGradingSystem();
+        GPACalculator gpaCalculator = new GPACalculator(gradingSystem);
+
         System.out.println("GPA (Letter Grades): " + gpaCalculator.calculateGPA(letterGradeCourses));
 
 
+        numberGradeCourses.add(new Course("CS", 50));
 
+        gradingSystem = new NumericGradingSystem();
+        gpaCalculator = new GPACalculator(gradingSystem);
 
-        numberGradeCourses.add(new Course("CS", 90));
-
-        GradingSystem gradingSystem = new NumericGradingSystem();
-        GPACalculator gpaCalculator1 = new GPACalculator(gradingSystem);
-        System.out.println("GPA (Number Grades): " + gpaCalculator1.calculateGPA(numberGradeCourses));
+        System.out.println("GPA (Number Grades): " + gpaCalculator.calculateGPA(numberGradeCourses));
     }
 }
