@@ -1,4 +1,4 @@
-package Week09.Intro.without;
+package Week09.Intro;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,12 +10,12 @@ public class Old {
 
 
         list.add("Hello");
-        list.add(123);  // allowed
-        list.add(new Date());  // allowed
+        list.add(123);
+        list.add(new Date());
 
-        String str = (String) list.get(0); // OK
-        Integer num = (Integer) list.get(1); // OK
-        Date date = (Date) list.get(2); // OK
+        String str = (String) list.get(0);
+        Integer num = (Integer) list.get(1);
+        Date date = (Date) list.get(2);
 
 
         Integer num1 = (Integer) list.get(2);
