@@ -23,7 +23,7 @@ public class Print<T> {
 
        /*
        The following also work because these are using the raw type Print.
-       A raw type means Java treats it roughly like:  Print<Object>
+       A raw type means Java treats it roughly like:  Print<Object> or Print
        But this loses type safety.
        For example:
        Print<String> print = new Print("1.1"); // raw type allowed, but unsafe

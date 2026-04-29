@@ -20,8 +20,6 @@ public class UpperBoundEx {
     public static double sum(List<Number> list){
         double sum = 0;
 
-        //list.add(3.5);
-
         for(Number n : list){
             sum += n.doubleValue();
         }
