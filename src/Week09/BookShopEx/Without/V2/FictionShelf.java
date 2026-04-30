@@ -1,14 +1,27 @@
 package Week09.BookShopEx.Without.V2;
 
+
+import Week09.BookShopEx.Book;
 import Week09.BookShopEx.Fiction;
 
-public class FictionShelf  extends BookShelf {
+import java.util.ArrayList;
+import java.util.List;
+
+public class FictionShelf {
+    private List<Fiction> inventory = new ArrayList<>();
+
     public void addItem(Fiction book) {
-        super.addItem(book);
+        inventory.add(book);
     }
 
-    @Override
+
     public Fiction getItem(int index) {
-        return (Fiction) super.getItem(index);
+        return inventory.get(index);
+    }
+
+    public void displayBooks() {
+        for (Book book : inventory) {
+            System.out.println(book.getTitle() + " (" + book.getGenre() + ")");
+        }
     }
 }
